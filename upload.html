@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/upload.css" rel="stylesheet" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+   
+  <button class="button" value="關閉視窗" onClick="window.close()">Cancel</button>
+  <div class="topnav">Upload your Image</div>
+  
+  <div class="image">
+      <div class="text1">Drag and drop an image</div>
+      <div class="text2">or browse to choose a file</div>
+
+<input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+<label for="file" style="cursor: pointer;"><img src="img/drag.svg"></label>
+<img id="upload" width="200" />
+</div>
+
+<div class="forms">
+  <form action="/action_page.php">
+  <p><label for="Title">Title</label><br>
+  <input type="text" id="Title" name="Title" placeholder="Add a Title"></p>
+  <p><label for="Aname">Author Name</label><br>
+  <input type="text" id="Aname" name="Aname" value=""></p>
+  <p><label for="Category">Category</label><br>
+  <select id="Category" name="Category">
+    <option value="Mobile">Mobile</option>
+    <option value="Web Design">Web Design</option>
+    <option value="Icons">Icons</option>
+  </select></p>
+  <p><label for="Tags">Tags</label><br>
+  <input type="text" id="Tags" name="Tags" value=""></p>
+  <p><label for="Description">Description</label><br>
+  <textarea cols="8" rows="5"></textarea></p>
+  </form>
+</div>
+
+<div class="uploadBtn">
+<button class="button button2">Upload</button>
+</div>
+  
+  <script src="js/upload.js"></script>
+</body>
+</html>
