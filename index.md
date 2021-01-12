@@ -1,37 +1,385 @@
-## Welcome to GitHub Pages
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Gwenog/Via-work/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My test page</title>
+  <link href="styles/main.css" rel="stylesheet" type="text/css">
+  <style>@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap);</style>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+  <body>
+    <button class="button" onClick="window.open('upload.html');">Upload</button>
+    <div class="inspiration" onClick="window.open('inspiration.html');">Inspiration</div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div id="myOverlay" class="overlay_s">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form action="/action_page.php" >
+          <input type="text" placeholder="Search.." name="search" >
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <div class="title">Popular Search Terms</div>
+          <div class="keywords"><p>Illustration Interface<br>
+                          <p>Fashion Website<br>
+                          <p>Flags Icons<br>
+                          <p>Mobile App Related Works</p>
+          </div>
+        </form>
+      </div>
+    </div>
 
-### Markdown
+    <form>
+    <input type="text" onclick="openSearch()" placeholder="Search.." class="searchBar">
+    </form>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <header>
+    <div class="header">
+      <img src="img/header.png" alt="header" />
+    </div>
+    <div class="UID">USER<br>INTERFACE<br>DESIGN<br>SECTION</div>
+    <div class="RIL">Reference Image Library</div>
+    </header>
+    
 
-```markdown
-Syntax highlighted code block
+  <div id="navi">
+    <button class="tablink" onclick="openPage('All', this)" id="defaultOpen">All</button>
+    <button class="tablink" onclick="openPage('Mobile', this)">Mobile</button>
+    <button class="tablink" onclick="openPage('Web Design', this)">Web Design</button>
+    <button class="tablink" onclick="openPage('Icons', this)">Icons</button>
+  </div>
+  
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+  <div class="container">
+     <div id="All" class="tabcontent">
+      <div class="gallery">
+        <figure class="gallery_item" onclick="openModal();currentSlide(1)">
+          <img src="img/all-01.jpg" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(2)">
+          <img src="img/all-02.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(3)">
+          <img src="img/all-03.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(4)">
+          <img src="img/all-04.jpg" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(5)">
+          <img src="img/all-05.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(6)">
+          <img src="img/all-06.png" style="width:100%"  class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(7)">
+          <img src="img/all-07.jpg" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(8)">
+          <img src="img/all-08.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+      
+      </div>
+     </div>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+     <div id="Mobile" class="tabcontent">
+      <div class="gallery">
+        <figure class="gallery_item" onclick="openModal();currentSlide(9)">
+          <img src="img/mobile-01.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(10)">
+          <img src="img/mobile-02.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(11)">
+          <img src="img/mobile-03.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(12)">
+          <img src="img/mobile-04.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(13)">
+          <img src="img/mobile-05.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(14)">
+          <img src="img/mobile-06.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(15)">
+          <img src="img/mobile-07.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(16)">
+          <img src="img/mobile-08.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+      </div>
+     </div>
 
-[Link](url) and ![Image](src)
-```
+     <div id="Web Design" class="tabcontent">
+      <div class="gallery">
+        <figure class="gallery_item" onclick="openModal();currentSlide(17)">
+          <img src="img/web-01.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(18)">
+          <img src="img/web-02.jpg" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(19)">
+          <img src="img/web-03.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(20)">
+          <img src="img/all-08.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(21)">
+          <img src="img/web-05.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(22)">
+          <img src="img/web-06.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(23)">
+          <img src="img/web-07.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(24)">
+          <img src="img/web-08.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+      </div>
+     </div>
+      
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+     <div id="Icons" class="tabcontent">
+      <div class="gallery">
+        <figure class="gallery_item" onclick="openModal();currentSlide(25)">
+          <img src="img/icon-01.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(26)">
+          <img src="img/icon-02.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(27)">
+          <img src="img/icon-03.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(28)">
+          <img src="img/icon-04.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(29)">
+          <img src="img/icon-05.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(30)">
+          <img src="img/icon-06.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(31)">
+          <img src="img/icon-07.jfif" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+        <figure class="gallery_item" onclick="openModal();currentSlide(32)">
+          <img src="img/icon-08.png" style="width:100%" class="gallery_img">Author Name
+          <div class="overlay">Lorem Ipsum</div>
+        </figure>
+      </div>
+     </div>
 
-### Jekyll Themes
+    <div id="picModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-01.jpg" style="width:100%" class="slidesImg">
+        </div>
+    
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-02.png" style="width:100%" class="slidesImg">
+        </div>
+    
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-03.png" style="width:100%" class="slidesImg">
+        </div>
+    
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-04.jpg" style="width:100%" class="slidesImg">
+        </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Gwenog/Via-work/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-05.png" style="width:100%" class="slidesImg">
+        </div>
 
-### Support or Contact
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-06.png" style="width:100%" class="slidesImg">
+        </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-07.jpg" style="width:100%" class="slidesImg">
+        </div>
+
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-08.png" style="width:100%" class="slidesImg">
+        </div>
+    
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-01.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-02.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-03.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-04.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-05.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-06.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-07.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/mobile-08.png" style="width:100%" class="slidesImg">
+        </div>
+
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-01.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-02.jpg" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-03.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/all-08.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-05.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-06.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-07.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/web-08.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-01.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-02.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-03.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-04.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-05.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-06.png" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-07.jfif" style="width:100%" class="slidesImg">
+        </div>
+        
+        <div class="gallerySlides">
+          <div class="slidesText">Lorem Ipsum</div>
+          <img src="img/icon-08.png" style="width:100%" class="slidesImg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+  </body>
+
+  
+  </html>
